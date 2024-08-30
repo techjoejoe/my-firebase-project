@@ -1,0 +1,42 @@
+.email-section,
+.password-section,
+.repeat-password-section {
+  transition: all 0.3s ease-in-out;
+}
+
+.fold-up {
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+.next {
+  color: green;
+}
+
+.next-button {
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.email-section.fold-up,
+.password-section.fold-up,
+.repeat-password-section.fold-up {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+.email-section.active,
+.password-section.active,
+.repeat-password-section.active {
+  visibility: visible;
+  height: auto;
+  margin: auto;
+  padding: auto;
+  opacity: 1;
+}
+
+.success {
+  margin-top: 50px;
+}
